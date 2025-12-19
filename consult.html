@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consult Now | Ayurveda Ayatanam</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="Style.css">
+
+  <style>
+    /* Specific Consult Page Styles */
+    .consult-header {
+      background: linear-gradient(135deg, #7ddf9b, #b6f2d6);
+      padding: 70px 20px;
+      text-align: center;
+      margin-top: 80px;
+      /* Offset for fixed navbar */
+    }
+
+    .consult-header h1 {
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      margin-bottom: 10px;
+    }
+
+    .consult-header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+
+    .consult-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+    }
+
+    .consult-info,
+    .consult-form {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .consult-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #1b4332;
+    }
+
+    .consult-info ul {
+      margin-top: 15px;
+      padding-left: 20px;
+      list-style: none;
+    }
+
+    .consult-info ul li {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .consult-form h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #1b4332;
+    }
+
+    .consult-form input,
+    .consult-form select,
+    .consult-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #cdeee0;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .consult-form button {
+      width: 100%;
+      padding: 14px;
+      background: #2d6a4f;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .consult-form button:hover {
+      background: #1b4332;
+    }
+
+    @media (max-width: 900px) {
+      .consult-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Team D/images/nav_logo.png" alt="Ayurveda Ayatanam Logo"
+          onerror="this.src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=252,fit=crop,q=95/Yg2W7j2ZMyFV4R7r/aalogo22-YlevLWGwroF0lrqL.png'">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap"
+              href="Team C/Ayurvedaayatanam/Daivapipashaya Chikitsa/Diva.html">Daivavyapashraya
+              Chikitsa</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap" href="Team C/html/Panchkarma.html">Panchakarma</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap" href="Team C/html/jyotisha-diagnosis.html">Hora
+              Ayurveda</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap"
+              href="Team C/Ayurvedaayatanam/Jalookavacharana/Jaloo.html">Jaloukavacharana</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us <i
+                class="fas fa-chevron-down ms-1" style="font-size: 0.75em;"></i></a>
+            <ul class="dropdown-menu border-0 shadow rounded-3 p-2">
+              <li><a class="dropdown-item rounded-2 py-2" href="Team D/about-dr-tejas-bharadwaj.html">About Dr.
+                  Tejas Bharadwaj</a></li>
+              <li><a class="dropdown-item rounded-2 py-2" href="Team D/about-ayurveda-ayatanam.html">About
+                  Ayurveda Ayatanam</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 ms-2">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+          <a href="consult.html" class="btn btn-nav-cta">Ayurveda For Everyone</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="consult-header">
+    <h1>Consult with Our Ayurvedic Experts</h1>
+    <p>Get personalized Ayurvedic guidance for your health concerns through online or in‑person consultation.</p>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="consult-container">
+    <!-- LEFT INFO -->
+    <div class="consult-info">
+      <h2>Why Choose Ayurveda Consultation?</h2>
+      <p>Ayurveda focuses on identifying the root cause of health issues and restoring balance through natural
+        therapies, diet, and lifestyle changes.</p>
+      <ul>
+        <li>✔ Personalized Prakriti & Dosha analysis</li>
+        <li>✔ Natural and holistic treatment approach</li>
+        <li>✔ Diet & lifestyle recommendations</li>
+        <li>✔ Online & clinic consultations available</li>
+      </ul>
+      <p>Our experienced Vaidyas guide you step‑by‑step towards long‑term wellness.</p>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="consult-form">
+      <h3>Book a Consultation</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select required>
+          <option value="">Select Consultation Type</option>
+          <option>Online Consultation</option>
+          <option>Clinic Visit</option>
+        </select>
+        <textarea placeholder="Describe your health concern" style="min-height: 120px;"></textarea>
+        <button type="submit">Consult Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="mb-4">
+        <a href="index.html" class="text-decoration-none text-muted mx-2">Home</a>
+        <a href="Team D/about-dr-tejas-bharadwaj.html" class="text-decoration-none text-muted mx-2">About Founder</a>
+        <a href="#" class="text-decoration-none text-muted mx-2">Treatments</a>
+        <a href="#" class="text-decoration-none text-muted mx-2">Contact</a>
+      </div>
+
+      <div class="footer-social mb-4">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <p class="footer-text mb-0">&copy; 2025 Ayurveda Ayatanam. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

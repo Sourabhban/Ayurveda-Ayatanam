@@ -1,0 +1,146 @@
+/* MATCH TEAM D PROFESSIONAL STYLING - CLEAN & SIMPLE */
+
+/* Fix scroll - single browser scrollbar only */
+html {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    height: auto !important;
+    box-shadow: none !important;
+    filter: none !important;
+    background: #ffffff !important;
+}
+
+html::before,
+html::after,
+body::before,
+body::after {
+    display: none !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+/* Remove all unwanted effects */
+*,
+*::before,
+*::after {
+    box-shadow: none !important;
+    filter: none !important;
+    outline: none !important;
+}
+
+/* Fix containers - clean white like Team D */
+div,
+section,
+main,
+article {
+    overflow: visible !important;
+    max-height: none !important;
+}
+
+.m1-container,
+.m-container {
+    height: auto !important;
+    overflow: visible !important;
+    padding: 40px 20px !important;
+    background: #ffffff !important;
+}
+
+/* NAVBAR - White background like other pages */
+.navbar,
+.navbar-custom {
+    background: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* FIX LAYOUT STACKING - Critical Fix */
+.con-2 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px 60px !important;
+}
+
+/* Logo - NO hover effects or shadows */
+.navbar-brand img {
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-brand img:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Clean content cards - like Team D */
+/* Clean content cards - like Team D */
+.box-2,
+.content-box {
+    background: #ffffff;
+    /* Default white, can be overridden */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    /* Default soft shadow */
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+/* Fix image containers */
+div[class*="img-"] {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin: 20px auto !important;
+}
+
+/* Images - clean professional style */
+img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 15px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: none !important;
+}
+
+img:hover {
+    transform: none !important;
+}
+
+/* Professional typography - match Team D */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1a4d2e !important;
+    text-shadow: none !important;
+}
+
+p {
+    color: #2c3e50 !important;
+    line-height: 1.8 !important;
+    font-size: 1.1rem !important;
+}
+
+/* Footer - match Team D */
+footer,
+.site-footer {
+    background: #1a4d2e !important;
+    color: #ffffff !important;
+    padding: 40px 20px !important;
+    box-shadow: none !important;
+}

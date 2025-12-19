@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayurveda Ayatanam</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="Team C/styles/Style2.css">
+  <style>
+    /* Mobile Optimization */
+    @media (max-width: 991px) {
+
+      /* Stack layout containers that might use flex row */
+      .hero-content,
+      .about-container,
+      .hora-container {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+        gap: 30px !important;
+      }
+
+      /* Reset widths for stacked items */
+      .hero-text,
+      .hero-image,
+      .about-text,
+      .about-image,
+      .hora-text,
+      .hora-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+
+      /* Adjust font sizes for mobile to prevent overflow/crowding */
+      h1.title span {
+        font-size: 3rem !important;
+      }
+
+      h1 {
+        font-size: 2.5rem !important;
+      }
+
+      h2 {
+        font-size: 1.8rem !important;
+      }
+
+      h3 {
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+      }
+
+      /* Visual adjustments */
+      .hora-image img,
+      .about-image img,
+      .hero-image img {
+        width: 100% !important;
+        object-fit: cover !important;
+        border-radius: 20px !important;
+      }
+
+      /* Ensure text overlays are readable */
+      .hero-text h4 {
+        font-size: 1.2rem !important;
+      }
+
+      /* Fix potential overflow */
+      body,
+      html {
+        overflow-x: hidden !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Team D/images/nav_logo.png" alt="Ayurveda Ayatanam Logo"
+          onerror="this.src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=252,fit=crop,q=95/Yg2W7j2ZMyFV4R7r/aalogo22-YlevLWGwroF0lrqL.png'">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap"
+              href="Team C/Ayurvedaayatanam/Daivapipashaya Chikitsa/Diva.html">Daivavyapashraya
+              Chikitsa</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap" href="Team C/html/Panchkarma.html">Panchakarma</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap" href="Team C/html/jyotisha-diagnosis.html">Hora
+              Ayurveda</a></li>
+          <li class="nav-item"><a class="nav-link text-nowrap"
+              href="Team C/Ayurvedaayatanam/Jalookavacharana/Jaloo.html">Jaloukavacharana</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us <i
+                class="fas fa-chevron-down ms-1" style="font-size: 0.75em;"></i></a>
+            <ul class="dropdown-menu border-0 shadow rounded-3 p-2">
+              <li><a class="dropdown-item rounded-2 py-2" href="Team D/about-dr-tejas-bharadwaj.html">About Dr.
+                  Tejas Bharadwaj</a></li>
+              <li><a class="dropdown-item rounded-2 py-2" href="Team D/about-ayurveda-ayatanam.html">About
+                  Ayurveda Ayatanam</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 ms-2">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+          <a href="consult.html" class="btn btn-nav-cta">Ayurveda For Everyone</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="daiva" style="background: url('Team D/images/ayurveda-hero.png') center/cover;">
+    <h1 class="title"
+      style="background: none !important; -webkit-text-fill-color: #1a4d2e !important; color: #1a4d2e !important;">
+      <span class="green">Ayurveda</span>
+      <span class="orange">Ayatanam</span>
+    </h1>
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="images/3.avif" alt="Ayurveda Healing">
+      </div>
+      <div class="hero-text">
+        <h2>Daivavyapashraya Chikitsa</h2>
+        <h4>Healing Through Divine Grace</h4>
+        <p>At Ayurveda Ayatanam, we offer a holistic approach to healing that integrates traditional Vedic astrology
+          (Jyotish) as part of our spiritual therapies. Our expert astrologers assess planetary influences (Graha
+          Doshas) and provide personalized guidance.</p>
+        <a href="Team C/Ayurvedaayatanam/Daivapipashaya Chikitsa/Diva.html" class="btn">Know More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Ayurveda Ayatanam is a holistic healing center dedicated to promoting the ancient wisdom of Ayurveda, rooted
+          in the Vedas, Puranas, and classical Samhitas.</p>
+        <p>Founded by Dr. Tejas Bharadwaj B.A.M.S., an expert in Ayurveda, Jyotishya, and Sanskrit, we provide
+          treatments, education, and workshops.</p>
+        <p>Our mission is to restore balance and well-being through personalized, natural healing solutions.</p>
+        <a href="/Team D/about-ayurveda-ayatanam.html" class="learn-btn">Learn More</a>
+      </div>
+      <div class="about-image" style="margin-top: 15px;">
+        <img src="images/img3.avif" alt="About Ayurveda Ayatanam">
+      </div>
+    </div>
+  </section>
+
+  <!-- HORA AYURVEDA SECTION -->
+  <section class="hora-section" id="hora">
+    <div class="hora-container">
+      <div class="hora-text">
+        <h3>Discover <span class="gold">Hora</span><span class="aqua">Ayurveda</span></h3>
+        <h2>The First and Only</h2>
+        <h1>Artificial Intelligence</h1>
+        <h2>Based <span class="gold-script">astrology</span> and</h2>
+        <h1 class="aqua-text">ayurveda</h1>
+        <h2>Integration</h2>
+        <a href="Team C/html/jyotisha-diagnosis.html"><button class="hora-btn">Know More</button></a>
+      </div>
+      <div class="hora-image">
+        <img src="images/home img.avif" alt="Hora Ayurveda">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <h1>OUR SERVICES</h1>
+    <p class="sub-text">We offer a wide range of traditional Ayurvedic treatments, blending ancient wisdom with
+      personalized care to restore balance, rejuvenate the body, and enhance overall well-being.</p>
+
+    <div class="container pb-5">
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6 col-12" data-animate>
+          <a href="Team C/html/Nadi_Pariksha.html" style="text-decoration: none; color: inherit;">
+            <div class="service-box">
+              <img src="Team C/Images/NadiPariksha.avif" />
+              <div class="service-overlay">
+                <div class="service-title">Nadi Pariksha</div>
+                <div class="service-desc">Ancient Ayurvedic pulse diagnosis to assess dosha balance and health
+                  issues.</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12" data-animate>
+          <a href="Team C/html/Panchkarma.html" style="text-decoration: none; color: inherit;">
+            <div class="service-box">
+              <img src="Team C/Images/Panchkarma.avif" />
+              <div class="service-overlay">
+                <div class="service-title">Panchakarma</div>
+                <div class="service-desc">Five-step detox therapy for body purification and revitalization.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12" data-animate>
+          <a href="Team C/Ayurvedaayatanam/Daivapipashaya Chikitsa/Diva.html"
+            style="text-decoration: none; color: inherit;">
+            <div class="service-box">
+              <img src="Team C/Images/DaivaChikista.avif" />
+              <div class="service-overlay">
+                <div class="service-title">Daivapipashaya Chikitsa</div>
+                <div class="service-desc">
+                  Spiritual healing rituals to heal emotional and karmic imbalances.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-12" data-animate>
+          <a href="Team C/Ayurvedaayatanam/Jalookavacharana/Jaloo.html" style="text-decoration: none; color: inherit;">
+            <div class="service-box">
+              <img src="Team C/Images/jalookavacharna.avif" />
+              <div class="service-overlay">
+                <div class="service-title">Jalookavacharana</div>
+                <div class="service-desc">Leech therapy for detoxification and inflammation healing.</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12" data-animate>
+          <a href="Team C/html/jyotisha-diagnosis.html" style="text-decoration: none; color: inherit;">
+            <div class="service-box">
+              <img src="Team C/Images/JyotishaDiagnosis.avif" />
+              <div class="service-overlay">
+                <div class="service-title">Jyotisha Diagnosis</div>
+                <div class="service-desc">Vedic astrology-based health diagnosis for deeper insights.</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12" data-animate>
+          <a href="Team C/html/pumsavana-karma.html" style="text-decoration: none; color: inherit;">
+            <div class="service-box">
+              <img src="Team C/Images/PumsavanaKarma.avif" />
+              <div class="service-overlay">
+                <div class="service-title">Pumsavana Karma</div>
+                <div class="service-desc">Prenatal ritual for well-being of the mother and the unborn child.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PANCHAKARMA BLESSINGS SECTION -->
+  <section class="blessings-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Panchakarma's Blessings</h2>
+        <h4>The Path to Divine Balance</h4>
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blessing-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-om"></i>
+            </div>
+            <h3>Spiritual Purification</h3>
+            <p>Panchakarma purifies the body and soul, washing away karmic burdens that manifest as physical and mental
+              imbalances.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blessing-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-moon"></i>
+            </div>
+            <h3>Cosmic Harmony</h3>
+            <p>By balancing the doshas, Panchakarma reconnects you with the cosmic rhythms of nature and divine forces
+              of the universe.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blessing-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Longevity and Vitality</h3>
+            <p>Detoxification awakens ojas—the vital essence—restoring youth, vitality, and longevity as bestowed by the
+              divine.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blessing-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Mental Clarity & Inner Peace</h3>
+            <p>A purified mind becomes a vessel for divine wisdom, offering peace, clarity, and higher consciousness.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blessing-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-dove"></i>
+            </div>
+            <h3>Liberation from Suffering</h3>
+            <p>Panchakarma opens the path to Moksha by cleansing the physical vessel and freeing the soul from cycles of
+              suffering.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVINE CONNECTION SECTION -->
+  <section class="divine-connect-section">
+    <div class="container">
+      <div class="divine-content text-center">
+        <h2 class="text-white" style="color: #ffffff !important;">Connect with the Divine<br>at Ayurveda Ayatanam</h2>
+        <p class="text-white" style="color: #ffffff !important;">True healing transcends the physical. Let us guide your
+          journey to wellness through ancient spiritual wisdom.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="mb-4">
+        <a href="#" class="text-decoration-none text-muted mx-2">Home</a>
+        <a href="Team D/about-dr-tejas-bharadwaj.html" class="text-decoration-none text-muted mx-2">About Founder</a>
+        <a href="#" class="text-decoration-none text-muted mx-2">Treatments</a>
+        <a href="#" class="text-decoration-none text-muted mx-2">Contact</a>
+      </div>
+
+      <div class="footer-social mb-4">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <p class="footer-text mb-0">&copy; 2025 Ayurveda Ayatanam. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

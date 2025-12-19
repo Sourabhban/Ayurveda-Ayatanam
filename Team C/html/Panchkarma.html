@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="../styles/Panchkarma.css" rel="stylesheet">
+    <link href="../../Style.css" rel="stylesheet">
+    <style>
+        /* Mobile Responsive Fixes */
+        @media (max-width: 768px) {
+
+            /* Blessings Section Fix */
+            .panchakarma-content {
+                padding: 30px 20px !important;
+                margin: 0 !important;
+                border-radius: 15px !important;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+            }
+
+            .panchakarma-title2 {
+                font-size: 1.8rem !important;
+                line-height: 1.3 !important;
+                margin-bottom: 20px !important;
+                letter-spacing: 0 !important;
+            }
+
+            .panchakarma-intro {
+                font-size: 1rem !important;
+                margin-bottom: 25px !important;
+            }
+
+            .panchakarma-list li {
+                padding: 15px !important;
+            }
+
+            strong {
+                font-size: 1.1rem !important;
+            }
+
+            /* General Section Adjustments */
+            .hero-heading {
+                font-size: 2.2rem !important;
+            }
+
+            .hero-text,
+            .quote-icon {
+                font-size: 1rem !important;
+            }
+
+            /* Grid Fixes */
+            .panchakarma-center-row {
+                flex-direction: column !important;
+            }
+
+            .panchakarma-hero {
+                padding: 40px 15px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../Team D/images/nav_logo.png" alt="Ayurveda Ayatanam Logo"
+                    onerror="this.src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=252,fit=crop,q=95/Yg2W7j2ZMyFV4R7r/aalogo22-YlevLWGwroF0lrqL.png'">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap"
+                            href="../Ayurvedaayatanam/Daivapipashaya Chikitsa/Diva.html">Daivavyapashraya
+                            Chikitsa</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap" href="Panchkarma.html">Panchakarma</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap" href="jyotisha-diagnosis.html">Hora
+                            Ayurveda</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap"
+                            href="../Ayurvedaayatanam/Jalookavacharana/Jaloo.html">Jaloukavacharana</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us <i
+                                class="fas fa-chevron-down ms-1" style="font-size: 0.75em;"></i></a>
+                        <ul class="dropdown-menu border-0 shadow rounded-3 p-2">
+                            <li><a class="dropdown-item rounded-2 py-2"
+                                    href="../../Team D/about-dr-tejas-bharadwaj.html">About Dr.
+                                    Tejas Bharadwaj</a></li>
+                            <li><a class="dropdown-item rounded-2 py-2"
+                                    href="../../Team D/about-ayurveda-ayatanam.html">About
+                                    Ayurveda Ayatanam</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 ms-2">
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <a href="../../consult.html" class="btn btn-nav-cta">Ayurveda For Everyone</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero" data-animate>
+        <h2 class="hero-heading">Panchakarma</h2>
+        <div class="hero-wrapper">
+
+            <div class="hero-left">
+                <div class="image-shape">
+                    <img src="../Images/Panchkarma1.avif" alt="Ayurveda Patient">
+                </div>
+            </div>
+
+            <div class="hero-right" data-animate>
+                <div class="quote-icon">
+                    A Sacred Journey to Divine Healing at Ayurveda Ayatanam
+                </div>
+                <p class="hero-text">
+                    Modern yoga consists of a range of techniques including asanas and meditation
+                    derived from some of the philosophies, teachings and practices of the Yoga school,
+                    which is one of the six schools of traditional Hindu philosophies, and organised
+                    into a wide variety of schools and denominations. It has been described by
+                    Elizabeth de Michelis as having four types, namely...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero reverse" data-animate>
+        <h2 class="hero-heading">The Divine Essence of Panchakarma</h2>
+        <div class="hero-wrapper">
+
+            <div class="hero-left">
+                <div class="image-shape">
+                    <img src="../Images/DivineEssence.avif" alt="Ayurveda Patient">
+                </div>
+            </div>
+
+            <div class="hero-right" data-animate>
+                <div class="quote-icon">
+                    Holistic Approach to Mind and Body Wellness
+                </div>
+                <p class="hero-text">
+                    In the hallowed texts of Ayurveda, Panchakarma is described as a celestial blessing bestowed upon
+                    humanity to cleanse the body of impurities (doshas) and reconnect with our divine essence. Each of
+                    its five sacred procedures is a purification rite, unlocking the healing forces of nature,
+                    revitalizing prana (life force), and restoring the balance of the three doshas—Vata, Pitta, and
+                    Kapha.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="panchakarma-section" data-animate>
+        <h2 class="panchakarma-title1">The Five Sacred Actions of Panchakarma</h2>
+
+        <div class="panchakarma-grid">
+
+            <div class="panchakarma-card">
+                <img src="../Images/Vamana.avif" alt="Vamana">
+                <h3>Vamana</h3>
+                <p>A therapeutic emesis process to expel excess Kapha.</p>
+            </div>
+
+            <div class="panchakarma-card">
+                <img src="../Images/Virechana.avif" alt="Virechana">
+                <h3>Virechana</h3>
+                <p>A purgation therapy that removes excess Pitta.</p>
+            </div>
+
+            <div class="panchakarma-card">
+                <img src="../Images/Basti.avif" alt="Basti">
+                <h3>Basti</h3>
+                <p>Medicated enema therapy to balance Vata.</p>
+            </div>
+
+            <div class="panchakarma-center-row">
+
+                <div class="panchakarma-card">
+                    <img src="../Images/Nasya.avif" alt="Nasya">
+                    <h3>Nasya</h3>
+                    <p>
+                        Nasal therapy using medicated oils to clear the sinuses,
+                        enhance mental clarity, and treat head disorders.
+                    </p>
+                </div>
+
+                <div class="panchakarma-card">
+                    <img src="../Images/Raktamokshana.avif" alt="Raktamokshana">
+                    <h3>Raktamokshana</h3>
+                    <p>
+                        Bloodletting therapy to purify the blood and alleviate
+                        skin disorders and inflammatory conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero" data-animate>
+        <h2 class="hero-heading">Panchakarma at Ayurveda Ayatanam: <br> A Divine Healing Experience</h2>
+        <div class="hero-wrapper">
+
+            <div class="hero-left">
+                <div class="image-shape">
+                    <img src="../Images/DivineHealing.avif" alt="Ayurveda Patient">
+                </div>
+            </div>
+
+            <div class="hero-right">
+
+                <p class="hero-text">
+                    Our Panchakarma therapy is a divine ritual—a prayer in motion. At Ayurveda Ayatanam, we have
+                    perfected this ancient tradition under the guiding light of Daivavyapashraya Chikitsa, where
+                    spiritual remedies and sacred rituals are infused into every procedure. Here, we honor the divine in
+                    every patient, offering healing as a sacred communion with the cosmic forces that govern life.
+                </p>
+
+                <div class="quote-icon">
+                    Personalized Divine Healing
+                </div>
+
+                <p class="hero-text">
+                    Just as each soul is unique, so is your Panchakarma experience. Our learned Vaidyas (physicians)
+                    tailor each therapy to your Prakriti (constitution), ensuring it aligns perfectly with the cosmic
+                    energies influencing your life.
+                </p>
+
+                <div class="quote-icon">
+                    Sacred Herbal Preparations
+                </div>
+
+                <p class="hero-text">
+                    Our oils, herbs, and medicines are more than just remedies—they are blessings from nature, infused
+                    with sacred chants (mantras) and ancient wisdom. With each application, you will feel the divine
+                    energy coursing through you, uplifting every cell and spirit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="panchakarma-hero" data-animate
+        style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); position: relative; overflow: hidden;">
+        <!-- Background Image Overlay -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=1920&q=80') center/cover no-repeat; opacity: 0.15; z-index: 0;">
+        </div>
+
+        <div class="panchakarma-content"
+            style="position: relative; z-index: 1; background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); padding: 60px 80px; border-radius: 20px; max-width: 1000px; margin: 0 auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+
+            <h1 class="panchakarma-title2"
+                style="color: #f5e6c8 !important; text-align: center; margin-bottom: 30px; font-size: 3.5rem !important; font-weight: 700 !important; line-height: 1.2 !important; letter-spacing: 1px !important;">
+                Panchakarma's Blessings:<br>
+                The Path to Divine Balance
+            </h1>
+
+            <p class="panchakarma-intro"
+                style="color: #f1e8d9; text-align: center; font-size: 1.1rem; margin-bottom: 40px;">
+                Panchakarma is not just about healing—it is a journey back to the self, a return to the sacred
+                equilibrium that sustains all life.
+                Here are the divine blessings you receive through Panchakarma:
+            </p>
+
+            <ul class="panchakarma-list" style="list-style: none; padding: 0;">
+                <li
+                    style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid #d4b16a;">
+                    <strong style="color: #ffe1a8; font-size: 1.15rem;">Spiritual Purification:</strong>
+                    <span style="color: #f6efe4; display: block; margin-top: 8px; line-height: 1.7;">
+                        Panchakarma purifies the body and soul, washing away karmic burdens that manifest as physical
+                        and
+                        mental imbalances.
+                    </span>
+                </li>
+
+                <li
+                    style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid #d4b16a;">
+                    <strong style="color: #ffe1a8; font-size: 1.15rem;">Cosmic Harmony:</strong>
+                    <span style="color: #f6efe4; display: block; margin-top: 8px; line-height: 1.7;">
+                        By balancing the doshas, Panchakarma reconnects you with the cosmic rhythms of nature and divine
+                        forces of the universe.
+                    </span>
+                </li>
+
+                <li
+                    style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid #d4b16a;">
+                    <strong style="color: #ffe1a8; font-size: 1.15rem;">Longevity and Vitality:</strong>
+                    <span style="color: #f6efe4; display: block; margin-top: 8px; line-height: 1.7;">
+                        Detoxification awakens ojas—the vital essence—restoring youth, vitality, and longevity as
+                        bestowed
+                        by the divine.
+                    </span>
+                </li>
+
+                <li
+                    style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid #d4b16a;">
+                    <strong style="color: #ffe1a8; font-size: 1.15rem;">Mental Clarity and Inner Peace:</strong>
+                    <span style="color: #f6efe4; display: block; margin-top: 8px; line-height: 1.7;">
+                        A purified mind becomes a vessel for divine wisdom, offering peace, clarity, and higher
+                        consciousness.
+                    </span>
+                </li>
+
+                <li
+                    style="margin-bottom: 0; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid #d4b16a;">
+                    <strong style="color: #ffe1a8; font-size: 1.15rem;">Liberation from Suffering:</strong>
+                    <span style="color: #f6efe4; display: block; margin-top: 8px; line-height: 1.7;">
+                        Panchakarma opens the path to Moksha by cleansing the physical vessel and freeing the soul from
+                        cycles of suffering.
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <div class="mb-4">
+                <a href="../../index.html" class="text-decoration-none text-muted mx-2">Home</a>
+                <a href="../../Team D/about-dr-tejas-bharadwaj.html" class="text-decoration-none text-muted mx-2">About
+                    Founder</a>
+                <a href="#" class="text-decoration-none text-muted mx-2">Treatments</a>
+                <a href="#" class="text-decoration-none text-muted mx-2">Contact</a>
+            </div>
+
+            <div class="footer-social mb-4">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <p class="footer-text mb-0">&copy; 2025 Ayurveda Ayatanam. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+```

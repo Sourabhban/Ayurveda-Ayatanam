@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #fbfbfa;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Legacy Navbar Styles Removed */
+
+
+.hero {
+    padding: 100px 5% 0px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.hero-heading {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-bottom: 60px;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.image-shape {
+    width: 520px;
+    height: 520px;
+    background: #e9d4c5;
+    border-radius: 50% / 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-shape img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-right {
+    max-width: 550px;
+}
+
+.quote-icon {
+    font-size: 20px;
+    color: #3e9e61;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4c4c4c;
+    margin-bottom: 25px;
+}
+
+.hero.reverse .hero-wrapper {
+    flex-direction: row-reverse;
+}
+
+.panchakarma-section {
+    padding: 100px 6%;
+    background: linear-gradient(#e8d2b5, #d9b98b);
+    font-family: 'Marcellus', serif;
+}
+
+.panchakarma-title1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    color: #2e1c10;
+}
+
+.panchakarma-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.panchakarma-center-row {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.panchakarma-center-row .panchakarma-card {
+    max-width: 400px;
+}
+
+.panchakarma-card {
+    background: transparent;
+    text-align: center;
+}
+
+.panchakarma-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.panchakarma-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2e1c10;
+}
+
+.panchakarma-card p {
+    font-size: 16px;
+    color: #3a2a1d;
+    line-height: 1.6;
+}
+
+.panchakarma-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(36, 22, 10, 0.75),
+            rgba(36, 22, 10, 0.75)),
+        url("Images/Panchkarma.avif") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 80px 20%;
+}
+
+.panchakarma-content {
+    max-width: 900px;
+}
+
+.panchakarma-title2 {
+    font-family: "Marcellus", serif;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #f5e6c8;
+}
+
+.panchakarma-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #f1e8d9;
+}
+
+.panchakarma-list {
+    list-style: none;
+}
+
+.panchakarma-list li {
+    margin-bottom: 22px;
+    padding-left: 24px;
+    position: relative;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f6efe4;
+}
+
+.panchakarma-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #d4b16a;
+    font-size: 14px;
+}
+
+.panchakarma-list strong {
+    color: #ffe1a8;
+    font-weight: 500;
+}
+
+
+/* Transition  */
+
+/* Legacy Nav Animations Removed */
+
+.image-shape {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.image-shape img {
+    transition: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-shape:hover img {
+    transform: none;
+}
+
+.panchakarma-card {
+    transition: transform 0.35s ease;
+}
+
+.panchakarma-card:hover {
+    transform: translateY(-8px);
+}
+
+.panchakarma-card img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.panchakarma-card:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation  */
+
+[data-animate] {
+    opacity: 1;
+    transform: none;
+    transition: all 0.8s ease;
+}
+
+[data-animate].show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.panchakarma-card {
+    opacity: 1;
+    transform: none;
+    transition: all 0.7s ease;
+}
+
+.panchakarma-card.show {
+    opacity: 1;
+    transform: none;
+}
+
+/*  */
+
+.divine-contact {
+    position: relative;
+    min-height: 100vh;
+    background: url("Images/contact-bg.avif") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+    overflow: hidden;
+    /* position: fixed; */
+}
+
+.divine-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg,
+            rgba(15, 10, 5, 0.88),
+            rgba(30, 20, 10, 0.75));
+}
+
+.divine-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1300px;
+    width: 100%;
+    z-index: 2;
+}
+
+.divine-left h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 52px;
+    color: #f5e6c8;
+    line-height: 1.2;
+}
+
+.divine-left h1 span {
+    color: #ffcc70;
+}
+
+.divine-left p {
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e8dcc5;
+}
+
+.divine-info div {
+    margin-bottom: 15px;
+}
+
+.divine-info strong {
+    display: block;
+    color: #ffcc70;
+    margin-bottom: 4px;
+}
+
+.divine-info span {
+    color: #f1e8d9;
+}
+
+/* FORM */
+.divine-form {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    padding: 55px;
+    padding-left: 20px;
+}
+
+.divine-form h2 {
+    text-align: center;
+    color: #ffcc70;
+    font-family: 'Marcellus', serif;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.field {
+    /* text-align: center; */
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 16px;
+    background: transparent;
+    border: 2px solid rgba(255, 204, 112, 0.4);
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #ffdfa0;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.field textarea+label {
+    top: 18px;
+    transform: none;
+}
+
+.field input:focus+label,
+.field input:valid+label,
+.field textarea:focus+label,
+.field textarea:valid+label {
+    top: -10px;
+    background: rgba(15, 10, 5, 0.8);
+    padding: 0 8px;
+    font-size: 12px;
+    color: #ffcc70;
+}
+
+.divine-form button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #ffcc70, #c99b3b);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.divine-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 204, 112, 0.5);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .panchakarma-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .panchakarma-hero {
+        padding: 60px 5%;
+    }
+
+    .panchakarma-title {
+        font-size: 32px;
+    }
+
+    .panchakarma-intro {
+        font-size: 16px;
+    }
+
+    .panchakarma-list li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .image-shape {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .panchakarma-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .panchakarma-center-row {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .divine-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .divine-left h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .hero {
+        padding: 120px 6% 60px;
+    }
+
+    .hero-wrapper {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-heading {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .image-shape {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .panchakarma-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panchakarma-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-shape {
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero-heading {
+        font-size: 28px;
+    }
+}
+
+/*  */
+
+
+
+/* Legacy Responsive Nav Styles Removed */
