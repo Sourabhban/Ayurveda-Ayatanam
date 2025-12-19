@@ -1,16 +1,16 @@
 body {
     background: #fcfafa;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #302e2e;
     overflow-x: hidden;
 }
 
 h1 {
-    font-family: 'Marcellus', serif;
-    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
     text-align: center;
     margin-top: 50px;
-    color: #4e4d49;
+    color: #1a4d2e;
     font-size: 45px;
     opacity: 1;
 }
@@ -68,9 +68,9 @@ h1 {
 }
 
 .service-title {
-    font-family: 'Marcellus', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 5px;
 }
 

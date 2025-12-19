@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
 html,
 body {
     background: #fbfbfa;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Inter", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 a {
@@ -36,8 +38,8 @@ img {
 .hero-heading {
     text-align: center;
     font-size: 42px;
-    font-family: 'Marcellus', serif;
-    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
     color: #3d3d3d;
     margin-bottom: 60px;
 }
@@ -74,7 +76,7 @@ img {
 .quote-icon {
     font-size: 20px;
     color: #3e9e61;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -92,13 +94,13 @@ img {
 .panchakarma-section {
     padding: 100px 6%;
     background: linear-gradient(#e8d2b5, #d9b98b);
-    font-family: 'Marcellus', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .panchakarma-title1 {
     text-align: center;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 70px;
     color: #2e1c10;
 }
@@ -163,7 +165,7 @@ img {
 }
 
 .panchakarma-title2 {
-    font-family: "Marcellus", serif;
+    font-family: "Playfair Display", serif;
     font-size: 52px;
     line-height: 1.2;
     margin-bottom: 25px;
@@ -302,7 +304,7 @@ img {
 }
 
 .divine-left h1 {
-    font-family: 'Marcellus', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 52px;
     color: #f5e6c8;
     line-height: 1.2;
@@ -344,7 +346,7 @@ img {
 .divine-form h2 {
     text-align: center;
     color: #ffcc70;
-    font-family: 'Marcellus', serif;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
     font-size: 32px;
 }
@@ -401,7 +403,7 @@ img {
     border-radius: 40px;
     background: linear-gradient(135deg, #ffcc70, #c99b3b);
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     cursor: pointer;
     transition: 0.3s ease;
 }

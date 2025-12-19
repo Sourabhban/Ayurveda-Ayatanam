@@ -1,2 +1,0 @@
-# Ayurveda-Ayatanam
-# Ayurveda-Ayatanam

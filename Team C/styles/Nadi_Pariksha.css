@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
 /* Legacy Navbar Styles Removed */
 
 /* HERO */
@@ -22,7 +24,7 @@
 }
 
 .nadi-hero-content h1 {
-    font-family: "Marcellus", serif;
+    font-family: "Playfair Display", serif;
     font-size: 56px;
     margin-bottom: 20px;
 }
@@ -56,7 +58,7 @@
 }
 
 .nadi-section h2 {
-    font-family: "Marcellus", serif;
+    font-family: "Playfair Display", serif;
     font-size: 42px;
     margin-bottom: 30px;
     color: #2e1c10;
@@ -78,7 +80,7 @@
 
 .dosha-title {
     text-align: center;
-    font-family: "Marcellus", serif;
+    font-family: "Playfair Display", serif;
     font-size: 44px;
     margin-bottom: 70px;
     color: #2e1c10;
@@ -126,7 +128,7 @@
 
 .nadi-process h2 {
     text-align: center;
-    font-family: "Marcellus", serif;
+    font-family: "Playfair Display", serif;
     font-size: 42px;
     margin-bottom: 60px;
     color: #2e1c10;
@@ -146,7 +148,7 @@
 
 .step span {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 400;
     color: #b8893c;
 }
 
@@ -169,5 +171,30 @@
 
     .nadi-hero-content h1 {
         font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nadi-hero,
+    .nadi-section,
+    .dosha-section,
+    .nadi-process {
+        padding: 60px 20px !important;
+    }
+
+    .nadi-hero-content h1 {
+        font-size: 32px;
+        word-break: break-word;
+    }
+
+    .dosha-title,
+    .nadi-section h2,
+    .nadi-process h2 {
+        font-size: 28px !important;
+    }
+
+    .nadi-hero-wrapper {
+        gap: 40px;
     }
 }

@@ -1,4 +1,24 @@
 /* MATCH TEAM D PROFESSIONAL STYLING - CLEAN & SIMPLE */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif !important;
+    color: #1a4d2e !important;
+    /* Brand Green */
+    font-weight: 700 !important;
+    /* Changed from 400 to match Team D */
+    line-height: 1.3 !important;
+    margin-bottom: 1.5rem !important;
+}
 
 /* Fix scroll - single browser scrollbar only */
 html {
@@ -57,8 +77,29 @@ article {
 /* NAVBAR - White background like other pages */
 .navbar,
 .navbar-custom {
-    background: #ffffff !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    background: rgb(255, 255, 255) !important;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 30px 0px !important;
+    height: 65px !important;
+    padding: 7px 0 !important;
+}
+
+.navbar-brand img {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.nav-link {
+    font-size: 16px !important;
+    color: #121212 !important;
+}
+
+.btn-nav-cta {
+    background: #121212 !important;
+    color: #ffffff !important;
+    padding: 10px 24px !important;
+    border-radius: 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
 }
 
 /* FIX LAYOUT STACKING - Critical Fix */
@@ -136,11 +177,603 @@ p {
     font-size: 1.1rem !important;
 }
 
-/* Footer - match Team D */
+/* Footer - match other pages (white/light gray) */
 footer,
 .site-footer {
-    background: #1a4d2e !important;
-    color: #ffffff !important;
-    padding: 40px 20px !important;
+    background: rgb(248, 249, 250) !important;
+    color: rgb(64, 64, 64) !important;
+    padding: 40px 0 30px !important;
     box-shadow: none !important;
+}
+
+.site-footer a {
+    color: rgba(33, 37, 41, 0.75) !important;
+    text-decoration: none !important;
+}
+
+.site-footer a:hover {
+    color: rgb(33, 37, 41) !important;
+}
+
+.footer-social a {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 50% !important;
+    margin: 0 8px !important;
+    color: rgb(64, 64, 64) !important;
+}
+
+.footer-social a:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-3px) !important;
+}
+
+.footer-text {
+    color: rgb(64, 64, 64) !important;
+}
+
+/* MOBILE FIX FOR LONG HEADING */
+@media (max-width: 768px) {
+    .p-c-i .content h1 {
+        font-size: clamp(2.4rem, 6vw, 3.2rem) !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+        hyphens: auto !important;
+        line-height: 1.3 !important;
+        margin-bottom: 20px !important;
+
+    }
+
+    /* Fix for "Our Expertise" Heading */
+    .content-1 h1 {
+        font-size: clamp(1.5rem, 5vw, 2.2rem) !important;
+        /* Smaller size to fit long word */
+        line-height: 1.3 !important;
+        width: 100% !important;
+    }
+
+    /* Ensure specific word breaks if needed */
+    .content-1 h1 span {
+        display: block !important;
+        width: 100% !important;
+
+        /* BUG FIX: Use Viewport Width units */
+        /* This ensures the text is always as big as the screen width allows */
+        font-size: 9.5vw !important;
+
+        letter-spacing: -0.5px !important;
+        /* Readable spacing */
+        line-height: 1.25 !important;
+
+        overflow-wrap: normal !important;
+        white-space: nowrap !important;
+        margin-left: 0 !important;
+    }
+
+    /* Fallback for very small screens */
+    @media (max-width: 380px) {
+        .content-1 h1 span {
+            font-size: 1.3rem !important;
+            /* Tiny fallback */
+            word-break: break-all !important;
+            /* Force break only on tiny screens */
+        }
+    }
+
+    /* Fix image and content stacking for this section */
+    .s-c-i {
+        flex-direction: column-reverse !important;
+        /* Image on top */
+        gap: 30px !important;
+    }
+
+    .img-1 {
+        margin: 0 auto 30px !important;
+        width: 100% !important;
+        max-width: 400px !important;
+    }
+
+    .content-1 {
+        margin: 0 !important;
+        text-align: center !important;
+        padding: 0 15px !important;
+    }
+
+    /* Fix Border/Corners for "What is..." Image */
+    /* Fix Border/Corners for "What is..." Image */
+    .img-0 {
+        margin: 25px auto !important;
+        width: 100% !important;
+        /* Maximize width */
+        max-width: 420px !important;
+        /* Slightly larger cap */
+        height: auto !important;
+        position: relative;
+        display: block !important;
+
+        /* Remove Outer Container Visuals */
+        background: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* The Image - Applied styling directly */
+    .img-0 img {
+        width: 100% !important;
+        display: block !important;
+
+        /* Big Square Aspect Ratio for Size */
+        aspect-ratio: 1/1 !important;
+        object-fit: cover !important;
+        object-position: center !important;
+
+        /* Clean Rounded Style */
+        border-radius: 20px !important;
+        border: 2px solid #d4a574 !important;
+        /* Gold Border on Image */
+
+        /* Deep Shadow applied to image */
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25) !important;
+
+        /* Enhanced colors */
+        filter: contrast(1.1) saturate(1.1) !important;
+    }
+
+    /* Remove all pseudo elements */
+    .img-0::before,
+    .img-0::after,
+    .img-0>div[style*="absolute"] {
+        display: none !important;
+    }
+}
+
+/* =========================================
+   PUMSAVANA - ROYAL PREMIUM STYLING
+   ========================================= */
+
+/* Premium Silk White Body */
+html,
+body,
+body.pumsavana-page-body,
+.pumsavana-main-content,
+.pumsavana-container,
+.pumsavana-main-content section {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Global Typography System */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-h1,
+.font-h2,
+.font-h3,
+.navbar-brand,
+.nav-link.active {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    color: #1a4d2e !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Majestic Typography Scale - Royal Premium Standard */
+h1,
+.font-h1,
+.pumsavana-hero h2 {
+    font-size: 3.5rem !important;
+    line-height: 1.1 !important;
+}
+
+h2,
+.font-h2,
+.pumsavana-main-content h2 {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 40px !important;
+}
+
+h3,
+.font-h3 {
+    font-size: 1.6rem !important;
+    line-height: 1.3 !important;
+}
+
+h4,
+.font-h4 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+}
+
+/* Pure Black Body Text System - Absolute Implementation */
+/* Pure Black Body Text System - Absolute Implementation */
+html,
+body,
+.pumsavana-hero p,
+.pumsavana-hero li,
+.pumsavana-hero .lead,
+.pumsavana-main-content p,
+.pumsavana-main-content li,
+.pumsavana-main-content span,
+.pumsavana-main-content div,
+.pumsavana-main-content strong,
+.pumsavana-main-content b,
+.black-text {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+    color: #000000 !important;
+}
+
+/* Fix for Navbar CTA Button */
+.btn-nav-cta {
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 12px 28px !important;
+    border-radius: 12px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* Hero Section - Majestic Green to White Gradient */
+/* Hero Section - Majestic Green to White Gradient */
+.pumsavana-hero {
+    background: linear-gradient(135deg, #1a4d2e 0%, #ffffff 100%) !important;
+    padding: 160px 0 100px !important;
+    position: relative;
+    border-bottom: 2px solid #f2f2f2;
+    overflow: hidden;
+}
+
+.pumsavana-hero .container {
+    background: transparent !important;
+    /* Fixed: Allow gradient to show through */
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.pumsavana-hero .display-3 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: -2px !important;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pumsavana-hero .lead {
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
+.pumsavana-hero .font-p {
+    color: #ffffff !important;
+    letter-spacing: 5px !important;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Intro Section - Majestic Overlap Card - Optimized Selector */
+.pumsavana-main-content section:not(.pumsavana-hero) .container {
+    background: #ffffff !important;
+    padding: 60px 40px !important;
+    border-radius: 30px !important;
+    position: relative;
+    z-index: 10;
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(212, 165, 116, 0.1);
+}
+
+.pumsavana-hero+section .container {
+    margin-top: -60px !important;
+}
+
+/* Content Section Polish */
+.pumsavana-main-content section {
+    padding: 80px 0 !important;
+    background: transparent !important;
+    /* Use body pattern */
+}
+
+/* Global Section Headings - Synced with Team D */
+.pumsavana-main-content h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    color: #1a4d2e !important;
+    text-align: center;
+    margin-bottom: 50px !important;
+    position: relative;
+}
+
+/* Elegant Sanskrit Divider */
+.pumsavana-main-content h2::after {
+    content: "✻" !important;
+    display: block;
+    color: #d4a574;
+    font-size: 2.2rem;
+    margin: 20px auto 0;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Premium Card Grid for Lists */
+.pumsavana-main-content ol,
+.pumsavana-main-content ul:not(.navbar-nav):not(.dropdown-menu) {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)) !important;
+    gap: 50px !important;
+    padding: 40px 20px !important;
+    list-style: none !important;
+}
+
+.pumsavana-main-content ol li,
+.pumsavana-main-content ul:not(.navbar-nav):not(.dropdown-menu) li {
+    background: #ffffff !important;
+    padding: 60px 40px !important;
+    border-radius: 28px !important;
+    position: relative;
+    overflow: hidden;
+    /* Designer Border Accent */
+    border: 1px solid #f2f2f2 !important;
+    border-top: 6px solid #d4a574 !important;
+    /* Transition for that "Hover Lift" */
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.02),
+        0 20px 40px rgba(0, 0, 0, 0.04) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Shadow Interaction on All Content Cards */
+.pumsavana-main-content ol li:hover,
+.pumsavana-main-content ul:not(.navbar-nav):not(.dropdown-menu) li:hover {
+    transform: translateY(-15px) !important;
+    border-top-color: #1a4d2e !important;
+    box-shadow:
+        0 30px 60px rgba(26, 77, 46, 0.12),
+        0 50px 100px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Professional Card Details */
+.pumsavana-main-content li strong {
+    display: block !important;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.6rem !important;
+    color: #000000 !important;
+    /* Changed to black for absolute text consistency */
+    margin-bottom: 25px !important;
+    border-bottom: 2px solid #f9f9f9;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+.pumsavana-main-content li p {
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+    color: #000000 !important;
+    z-index: 1;
+}
+
+/* Subtle Counter Backgrounds */
+.pumsavana-main-content ol {
+    counter-reset: royal-counter;
+}
+
+.pumsavana-main-content ol li::after {
+    counter-increment: royal-counter;
+    content: counter(royal-counter);
+    position: absolute;
+    bottom: -10px;
+    right: 5px;
+    font-size: 9rem;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    color: rgba(26, 77, 46, 0.03);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Intro Text Decoration */
+.pumsavana-main-content>section>div>p {
+    font-size: 1.25rem !important;
+    line-height: 2;
+    color: #000000 !important;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Shloka Section Banner - Green to White Gradient */
+.shloka {
+    background: linear-gradient(135deg, #1a4d2e 0%, #ffffff 100%) !important;
+    padding: 100px 0 !important;
+    margin-top: 60px !important;
+    border-top: 1px solid #f0f0f0;
+}
+
+.shloka-container {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(26, 77, 46, 0.1);
+    border-radius: 30px !important;
+    padding: 80px 40px !important;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05) !important;
+    text-align: center;
+}
+
+.shloka h2 {
+    color: #1a4d2e !important;
+    font-size: 3.5rem !important;
+    margin-bottom: 25px !important;
+}
+
+.shloka h3 {
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #000000 !important;
+    font-size: 1.3rem !important;
+    line-height: 1.8 !important;
+    opacity: 1;
+}
+
+/* Footer Refinement - Match Reference Pages EXACTLY */
+.site-footer,
+footer.site-footer {
+    background: #f8f9fa !important;
+    padding: 40px 0 30px !important;
+    border-top: 1px solid #f0f0f0;
+}
+
+.site-footer a {
+    color: rgba(33, 37, 41, 0.75) !important;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-decoration: none !important;
+}
+
+.site-footer a:hover {
+    color: rgb(33, 37, 41) !important;
+}
+
+.footer-social a {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: none !important;
+    color: rgb(64, 64, 64) !important;
+    border-radius: 50% !important;
+    margin: 0 8px !important;
+    transition: 0.3s ease !important;
+}
+
+.footer-social a:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+    color: rgb(33, 37, 41) !important;
+    transform: translateY(-3px) !important;
+}
+
+.footer-text {
+    color: rgb(64, 64, 64) !important;
+}
+
+/* COMPREHENSIVE RESPONSIVENESS SUITE - ROYAL PREMIUM STANDARD */
+@media (max-width: 1200px) {
+
+    h1,
+    .font-h1,
+    .pumsavana-hero .display-3 {
+        font-size: 3rem !important;
+    }
+
+    h2,
+    .font-h2,
+    .pumsavana-main-content h2,
+    .pumsavana-main-content .h2,
+    .pumsavana-main-content .h3 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .pumsavana-hero {
+        padding: 100px 0 60px !important;
+        text-align: center;
+    }
+
+    .pumsavana-hero .display-3 {
+        font-size: 2.5rem !important;
+    }
+
+    .pumsavana-main-content section:not(.pumsavana-hero) .container {
+        padding: 40px 20px !important;
+        border-radius: 20px !important;
+    }
+
+    .pumsavana-hero+section .container {
+        margin-top: -40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h2,
+    .font-h2,
+    .pumsavana-main-content h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 25px !important;
+    }
+
+    .pumsavana-main-content ol,
+    .pumsavana-main-content ul:not(.navbar-nav):not(.dropdown-menu) {
+        gap: 20px !important;
+        padding: 10px !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .pumsavana-main-content ol li,
+    .pumsavana-main-content ul:not(.navbar-nav):not(.dropdown-menu) li {
+        padding: 30px 20px !important;
+        border-radius: 20px !important;
+    }
+
+    .shloka {
+        padding: 60px 0 !important;
+        margin-top: 40px !important;
+    }
+
+    .shloka-container {
+        padding: 40px 20px !important;
+        border-radius: 24px !important;
+    }
+
+    .shloka h2 {
+        font-size: 2.2rem !important;
+    }
+
+    .footer-social a {
+        width: 45px;
+        height: 45px;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1,
+    .font-h1,
+    .pumsavana-hero .display-3 {
+        font-size: 2rem !important;
+    }
+
+    .pumsavana-hero .h4 {
+        font-size: 1.2rem !important;
+    }
+
+    .pumsavana-hero .font-p {
+        font-size: 0.8rem !important;
+        letter-spacing: 3px !important;
+    }
 }

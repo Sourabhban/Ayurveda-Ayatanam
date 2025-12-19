@@ -15,11 +15,15 @@
 
             /* Hero Section */
             .section-1 .title {
-                font-size: 2.5rem !important;
+                font-size: 1.8rem !important;
+                /* Reduced to fit long word */
+                word-wrap: break-word !important;
+                hyphens: auto !important;
+                line-height: 1.3 !important;
             }
 
             .section-1 .subtitle {
-                font-size: 1.1rem !important;
+                font-size: 1rem !important;
             }
 
             /* Section 2 Card */
@@ -54,6 +58,15 @@
             /* List */
             .indications-list li {
                 margin-bottom: 10px;
+            }
+
+            /* Conclusion Section Fix */
+            .conclusion-card {
+                padding: 30px 20px !important;
+            }
+
+            .conclusion-title {
+                font-size: 2rem !important;
             }
         }
     </style>
@@ -131,9 +144,10 @@
     <section class="section section-2" id="section2"
         style="background: #ffffff; position: relative; padding: 80px 20px; min-height: auto;">
 
-        <div class="content-box"
-            style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.95); padding: 50px 40px; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.2);">
-            <h2 class="title" style="color: #1a4d2e !important; text-align: center; margin-bottom: 30px;">
+        <div class="content-box" style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.95);
+        padding: 50px 40px; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.2);">
+            <h2 class="title"
+                style="color: #1a4d2e !important; text-align: center; margin-bottom: 30px; word-break: break-word;">
                 Jaloukavacharana - The Leech Therapy</h2>
 
             <div class="text-content">
@@ -236,8 +250,8 @@
 
                 <!-- Heading -->
                 <div class="text-center mb-5" style="position: relative; z-index: 1;">
-                    <h2
-                        style="font-family: 'Playfair Display', serif; color: #1a4d2e; font-size: 3rem; font-weight: 700; margin-bottom: 15px;">
+                    <h2 style="font-family: 'Playfair Display', serif; color: #1a4d2e; font-size: 3rem; font-weight: 400; margin-bottom: 15px;"
+                        class="conclusion-title">
                         Conclusion</h2>
                     <div
                         style="width: 80px; height: 4px; background: linear-gradient(90deg, #1a4d2e, #d4a574); margin: 0 auto; border-radius: 2px;">
@@ -246,7 +260,7 @@
 
                 <!-- Intro -->
                 <p class="lead text-center mb-5"
-                    style="font-size: 1.25rem; line-height: 1.8; color: #444; max-width: 900px; margin-left: auto; margin-right: auto; font-family: 'Inter', sans-serif;">
+                    style="font-size: 1.25rem; line-height: 1.8; color: #444; max-width: 900px; margin-left: auto; margin-right: auto; font-family: 'Plus Jakarta Sans', sans-serif;">
                     <strong>Jaloukavacharana</strong>, an ancient Ayurvedic bloodletting therapy using leeches, remains
                     a gentle, effective, and highly controlled treatment reinforced by its extensive mention in
                     classical texts.
@@ -259,7 +273,7 @@
                         <div
                             style="padding: 30px; background: #f4fcf6; border-radius: 16px; border-left: 5px solid #1a4d2e; height: 100%; transition: transform 0.3s ease;">
                             <h4
-                                style="color: #1a4d2e; margin-bottom: 20px; font-family: 'Playfair Display', serif; font-weight: 700; display: flex; align-items: center;">
+                                style="color: #1a4d2e; margin-bottom: 20px; font-family: 'Playfair Display', serif; font-weight: 400; display: flex; align-items: center;">
                                 <i class="fas fa-flask me-3"
                                     style="background: #fff; padding: 10px; border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.05); color: #1a4d2e;"></i>
                                 Bioactive Mechanism
@@ -277,7 +291,7 @@
                         <div
                             style="padding: 30px; background: #fffcf5; border-radius: 16px; border-left: 5px solid #d4a574; height: 100%; transition: transform 0.3s ease;">
                             <h4
-                                style="color: #d4a574; margin-bottom: 20px; font-family: 'Playfair Display', serif; font-weight: 700; display: flex; align-items: center;">
+                                style="color: #d4a574; margin-bottom: 20px; font-family: 'Playfair Display', serif; font-weight: 400; display: flex; align-items: center;">
                                 <i class="fas fa-check-double me-3"
                                     style="background: #fff; padding: 10px; border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.05); color: #d4a574;"></i>
                                 Modern Validation
